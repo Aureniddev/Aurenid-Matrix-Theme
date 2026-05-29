@@ -1,0 +1,85 @@
+/**
+ * @name Aurenid World
+ * @author dworktofuture2-commits
+ * @version 1.0.0
+ * @description A high-tech matrix terminal theme dominated by cyber crimson red and glowing neon cyan links. Built using the Fallout4Terminal base layout by Bates.
+ * @source https://github.com/dworktofuture2-commits/Aurenid-Matrix-Theme
+*/
+
+/* Pulls the clean terminal base engine layout by Bates */
+@import url('https://B4T3S.github.io/Fallout4TerminalTheme/mainRewrite.css');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+:root,
+.visual-refresh,
+.visual-refresh.theme-dark {
+  /* ========================================================
+     👑 SYSTEM CORE & TEXT FONTS
+     ======================================================== */
+  --main-font: 'Share Tech Mono', monospace !important;
+  --font-display: 'Share Tech Mono', monospace !important;
+  font-size: 16px; 
+
+  --show-original-title: 0;
+  --show-custom-title: 1;
+  --custom-title-text: "AURENID WORLD"; 
+  --custom-title-font-size: 14px;
+  --custom-title-font-weight: 900;
+  --custom-title-margin-left: 12px;
+  --custom-title-margin-top: 4px;
+
+  /* ========================================================
+     🎨 THE MAIN COLOR OVERHAUL (CRIMSON RED DRIVEN)
+     ======================================================== */
+  --rgb-highlight: 255, 0, 54;        /* CRIMSON RED (#FF0036) FOR ALL DIALS & MENUS */
+  --rgb-text: 255, 255, 255;          /* Main chat text stays white */
+  --rgb-background: 10, 0, 2;         /* Dark red layout tint */
+  --rgb-close-button: 255, 0, 54;     
+  --rgb-dnd-color: 255, 0, 54;        
+  --rgb-online-color: 255, 0, 54;     /* Online user badges stay red */
+
+  /* ========================================================
+     👁️ IMAGE VISIBILITY CONTROLS
+     ======================================================== */
+  --background-image: url('https://media.discordapp.net/attachments/1443228823964483694/1509908153293082704/yes22.jpg?ex=6a1ae30c&is=6a19918c&hm=ff393d84036ec71b89ead99b3029ca2ba7009a02ec028d211d906842f0675b44&=&format=webp&width=1526&height=859');
+  --background-position: center;
+  --background-size: cover;
+  --background-blur: 10px;            
+  --background-brightness: 100%;      
+}
+
+/* ========================================================
+     🌐 STYLING FOR LINKS ONLY (CYAN TO WHITE HOVER)
+   ======================================================== */
+[class*="anchor_"], 
+#app-mount .markup-eYgYOl a, 
+#app-mount .messageContent__21e69 a {
+  color: #00F0FF !important;
+  text-shadow: 0 0 5px rgba(0, 240, 255, 0.7) !important;
+  text-decoration: none !important;
+}
+
+[class*="anchor_"]:hover, 
+#app-mount .markup-eYgYOl a:hover, 
+#app-mount .messageContent__21e69 a:hover {
+  color: #ffffff !important;
+  text-shadow: 0 0 6px #ffffff, 0 0 2px #FF0036 !important;
+  text-decoration: underline !important;
+}
+
+/* --- CHAT AND SYSTEM TEXT CODE OVERRIDES --- */
+.sansSerif-fv6D6X, .markup-eYgYOl, [class*="markup"], .messageContent__21e69 {
+  font-family: 'Share Tech Mono', monospace !important;
+  font-size: 16px !important;
+  text-shadow: 0 0 2px rgba(255, 0, 54, 0.2) !important;
+}
+
+.appMount__c6b11, .app__599d6, .bg__1214f {
+  background: transparent !important;
+}
+
+/* Title Bar text strictly glowing in Cyan over the Red UI */
+[class*="withFrame"]::after, .titleBar__710b0::after, #app-mount .custom-title {
+  color: rgb(0, 240, 255) !important;
+  text-shadow: 0 0 8px #00F0FF, 0 0 2px #FF0036 !important;
+}
