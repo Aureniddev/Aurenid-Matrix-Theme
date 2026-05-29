@@ -13,6 +13,8 @@ Welcome to the official repository for **Aurenid World**, a high-tech terminal s
 
 ## 🚀 How to Install (Discord / Vencord Tutorial)
 
+Vencord link- https://vencord.dev/
+
 Follow these quick steps to get this custom theme running inside your Discord client:
 
 ### 1. Copy the Official Raw Theme Link
