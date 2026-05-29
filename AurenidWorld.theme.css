@@ -1,7 +1,7 @@
 /**
  * @name Aurenid World
  * @author Aureniddev
- * @version 1.0.0
+ * @version 1.0.2
  * @description A high-tech matrix terminal theme dominated by cyber crimson red and glowing neon cyan links. Built using the Fallout4Terminal base layout by Bates.
  * @source https://github.com/Aureniddev/Aurenid-Matrix-Theme
 */
@@ -14,16 +14,16 @@
 .visual-refresh,
 .visual-refresh.theme-dark {
   /* ========================================================
-     👑 SYSTEM CORE & TEXT FONTS
+     👑 SYSTEM CORE & TEXT FONTS (COMPACT ENGINE)
      ======================================================== */
   --main-font: 'Share Tech Mono', monospace !important;
   --font-display: 'Share Tech Mono', monospace !important;
-  font-size: 10px; 
+  font-size: 13px !important; 
 
   --show-original-title: 0;
   --show-custom-title: 1;
   --custom-title-text: "AURENID WORLD"; 
-  --custom-title-font-size: 14px;
+  --custom-title-font-size: 13px;
   --custom-title-font-weight: 900;
   --custom-title-margin-left: 12px;
   --custom-title-margin-top: 4px;
@@ -67,10 +67,29 @@
   text-decoration: underline !important;
 }
 
-/* --- CHAT AND SYSTEM TEXT CODE OVERRIDES --- */
-.sansSerif-fv6D6X, .markup-eYgYOl, [class*="markup"], .messageContent__21e69 {
+/* ========================================================
+     📦 LAYOUT COMPACTION & ROW SPACING OVERRIDES
+   ======================================================== */
+/* Shrinks the huge padding blocks around messages */
+[class*="message__"], [class*="messageListItem__"] {
+  padding-top: 2px !important;
+  padding-bottom: 2px !important;
+  margin-bottom: 2px !important;
+}
+
+/* Tightens username headers and reply lines */
+[class*="header__"], [class*="repliedMessage__"] {
+  min-height: unset !important;
+  margin-bottom: 1px !important;
+  padding: 0 !important;
+}
+
+/* Forces text content blocks to stay sharp, cleanly scaled, and tightly bound */
+.sansSerif-fv6D6X, .markup-eYgYOl, [class*="markup"], .messageContent__21e69, [class*="messageContent__"] {
   font-family: 'Share Tech Mono', monospace !important;
-  font-size: 16px !important;
+  font-size: 13px !important; 
+  line-height: 1.25 !important;
+  margin-top: 1px !important;
   text-shadow: 0 0 2px rgba(255, 0, 54, 0.2) !important;
 }
 
