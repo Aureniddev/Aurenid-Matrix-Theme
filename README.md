@@ -1,4 +1,4 @@
-# 💀 Aurenid World — Custom Terminal Theme
+# 💀 Aurenid World, Custom Terminal Theme
 
 Welcome to the official repository for **Aurenid World**, a high-tech terminal style overhaul designed for Discord via Vencord.
 
