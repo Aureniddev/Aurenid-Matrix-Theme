@@ -1,7 +1,7 @@
 /**
  * @name Aurenid World
  * @author Aureniddev
- * @version 1.0.3
+ * @version 1.0.4
  * @description A high-tech matrix terminal theme dominated by cyber crimson red and glowing neon cyan links. Built using the Fallout4Terminal base layout by Bates.
  * @source https://github.com/Aureniddev/Aurenid-Matrix-Theme
 */
@@ -20,6 +20,12 @@
   --font-display: 'Share Tech Mono', monospace !important;
   font-size: 13px !important; 
 
+  /* FORCE DISCORD'S INTERNAL GRID GAP ENGINE TO ZERO */
+  --custom-message-spacing-vertical-container-cozy: 0px !important;
+  --group-spacing: 0px !important;
+  --message-margin-cozy_bottom: 0px !important;
+  --message-margin-cozy_top: 0px !important;
+
   --show-original-title: 0;
   --show-custom-title: 1;
   --custom-title-text: "AURENID WORLD"; 
@@ -31,12 +37,12 @@
   /* ========================================================
      🎨 THE MAIN COLOR OVERHAUL (CRIMSON RED DRIVEN)
      ======================================================== */
-  --rgb-highlight: 255, 0, 54;        /* CRIMSON RED (#FF0036) FOR ALL DIALS & MENUS */
-  --rgb-text: 255, 255, 255;          /* Main chat text stays white */
-  --rgb-background: 10, 0, 2;         /* Dark red layout tint */
+  --rgb-highlight: 255, 0, 54;        
+  --rgb-text: 255, 255, 255;          
+  --rgb-background: 10, 0, 2;         
   --rgb-close-button: 255, 0, 54;     
   --rgb-dnd-color: 255, 0, 54;        
-  --rgb-online-color: 255, 0, 54;     /* Online user badges stay red */
+  --rgb-online-color: 255, 0, 54;     
 
   /* ========================================================
      👁️ IMAGE VISIBILITY CONTROLS
@@ -68,24 +74,30 @@
 }
 
 /* ========================================================
-     📦 ULTRA-COMPACT ROW SPACING & GAP COLLAPSER
+     📦 AGGRESSIVE ZERO-GAP SPACING OVERRIDES
    ======================================================== */
-/* Crushes the massive margin gaps between different users block messages */
+/* Pulls message rows into each other tightly */
 [class*="messageListItem__"] {
   padding: 0 !important;
   margin: 0 !important;
-  margin-bottom: 1px !important; 
+  margin-top: -3px !important; /* Negative margin pulls rows up together */
 }
 
 [class*="message__"] {
-  padding-top: 1px !important;
-  padding-bottom: 1px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
   margin: 0 !important;
 }
 
-/* Removes empty background space from reply loops */
+/* Completely flattens the inner message content wrapper gaps */
+[class*="contents__"] {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Crushes reply container gaps */
 [class*="repliedMessage__"] {
-  margin-bottom: 0px !important;
+  margin-bottom: -2px !important;
   padding-bottom: 0px !important;
   min-height: unset !important;
 }
@@ -93,7 +105,7 @@
 /* Tightens the user name layout box */
 [class*="header__"] {
   min-height: unset !important;
-  margin-bottom: 0px !important;
+  margin-bottom: -1px !important;
   padding: 0 !important;
 }
 
@@ -101,7 +113,7 @@
 .sansSerif-fv6D6X, .markup-eYgYOl, [class*="markup"], .messageContent__21e69, [class*="messageContent__"] {
   font-family: 'Share Tech Mono', monospace !important;
   font-size: 13px !important; 
-  line-height: 1.22 !important;
+  line-height: 1.20 !important;
   margin-top: 0px !important;
   text-shadow: 0 0 2px rgba(255, 0, 54, 0.2) !important;
 }
