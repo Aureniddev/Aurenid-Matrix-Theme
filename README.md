@@ -19,3 +19,7 @@ Follow these quick steps to get this custom theme running inside your Discord cl
 Copy this exact URL address:
 ```text
 [https://raw.githubusercontent.com/Aureniddev/Aurenid-Matrix-Theme/refs/heads/main/AurenidWorld.theme.css](https://raw.githubusercontent.com/Aureniddev/Aurenid-Matrix-Theme/refs/heads/main/AurenidWorld.theme.css)
+---
+
+## 📜 Credits & Framework
+This project is a custom design, custom font config, and colorway fork **built on top of the open-source [Fallout 4 Terminal Theme engine](https://github.com/B4T3S/Fallout4TerminalTheme) made by Bates**. Huge shoutout to them for providing the core layout framework!
