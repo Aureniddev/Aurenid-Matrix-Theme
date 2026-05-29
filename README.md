@@ -18,7 +18,17 @@ Follow these quick steps to get this custom theme running inside your Discord cl
 ### 1. Copy the Official Raw Theme Link
 Copy this exact URL address:
 ```text
-[https://raw.githubusercontent.com/Aureniddev/Aurenid-Matrix-Theme/refs/heads/main/AurenidWorld.theme.css](https://raw.githubusercontent.com/Aureniddev/Aurenid-Matrix-Theme/refs/heads/main/AurenidWorld.theme.css)
+
+Grab the Live Link
+Open the AurenidWorld.theme.css or second updated gap file right here on GitHub.
+Look at the top right of the code window and click the Raw button.
+Copy the entire URL address from your browser's address bar.
+
+Load it into Discord
+Open Discord and go to your User Settings.
+Scroll down the left sidebar to the Vencord section and click on Themes.
+Paste your copied link straight into the text box labeled "Paste links to css files here" under Online Themes.
+Hit Save or close your settings—the theme will deploy instantly!
 ---
 
 ## 📜 Credits & Framework
