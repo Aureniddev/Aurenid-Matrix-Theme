@@ -14,7 +14,7 @@
 .visual-refresh,
 .visual-refresh.theme-dark {
   /* ========================================================
-     👑 SYSTEM CORE & TEXT FONTS (COMPACT ENGINE)
+     SYSTEM CORE & TEXT FONTS (COMPACT ENGINE)
      ======================================================== */
   --main-font: 'Share Tech Mono', monospace !important;
   --font-display: 'Share Tech Mono', monospace !important;
@@ -25,7 +25,7 @@
   --custom-title-text: "AURENID WORLD"; 
   --custom-title-font-size: 13px;
   --custom-title-font-weight: 900;
-  --custom-title-margin-left: 12px;
+  --custom-title-margin-left: 26px;
   --custom-title-margin-top: 4px;
 
   /* ========================================================
@@ -39,7 +39,7 @@
   --rgb-online-color: 255, 0, 54;     /* Online user badges stay red */
 
   /* ========================================================
-     👁️ IMAGE VISIBILITY CONTROLS
+     IMAGE VISIBILITY CONTROLS
      ======================================================== */
   --background-image: url('https://media.discordapp.net/attachments/1443228823964483694/1509908153293082704/yes22.jpg?ex=6a1ae30c&is=6a19918c&hm=ff393d84036ec71b89ead99b3029ca2ba7009a02ec028d211d906842f0675b44&=&format=webp&width=1526&height=859');
   --background-position: center;
@@ -49,7 +49,7 @@
 }
 
 /* ========================================================
-     🌐 STYLING FOR LINKS ONLY (CYAN TO WHITE HOVER)
+     STYLING FOR LINKS ONLY (CYAN TO WHITE HOVER)
    ======================================================== */
 [class*="anchor_"], 
 #app-mount .markup-eYgYOl a, 
@@ -68,7 +68,7 @@
 }
 
 /* ========================================================
-     📦 ULTRA-COMPACT ROW SPACING & GAP COLLAPSER
+     COMPACT ROW SPACING & GAP COLLAPSER
    ======================================================== */
 /* Crushes the massive margin gaps between different users block messages */
 [class*="messageListItem__"] {
