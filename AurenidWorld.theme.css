@@ -1,7 +1,7 @@
 /**
  * @name Aurenid World
  * @author Aureniddev
- * @version 1.0.2
+ * @version 1.0.3
  * @description A high-tech matrix terminal theme dominated by cyber crimson red and glowing neon cyan links. Built using the Fallout4Terminal base layout by Bates.
  * @source https://github.com/Aureniddev/Aurenid-Matrix-Theme
 */
@@ -68,28 +68,41 @@
 }
 
 /* ========================================================
-     📦 LAYOUT COMPACTION & ROW SPACING OVERRIDES
+     📦 ULTRA-COMPACT ROW SPACING & GAP COLLAPSER
    ======================================================== */
-/* Shrinks the huge padding blocks around messages */
-[class*="message__"], [class*="messageListItem__"] {
-  padding-top: 2px !important;
-  padding-bottom: 2px !important;
-  margin-bottom: 2px !important;
+/* Crushes the massive margin gaps between different users block messages */
+[class*="messageListItem__"] {
+  padding: 0 !important;
+  margin: 0 !important;
+  margin-bottom: 1px !important; 
 }
 
-/* Tightens username headers and reply lines */
-[class*="header__"], [class*="repliedMessage__"] {
+[class*="message__"] {
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+  margin: 0 !important;
+}
+
+/* Removes empty background space from reply loops */
+[class*="repliedMessage__"] {
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
   min-height: unset !important;
-  margin-bottom: 1px !important;
+}
+
+/* Tightens the user name layout box */
+[class*="header__"] {
+  min-height: unset !important;
+  margin-bottom: 0px !important;
   padding: 0 !important;
 }
 
-/* Forces text content blocks to stay sharp, cleanly scaled, and tightly bound */
+/* Ensures chat content lines sit tightly together without breaking */
 .sansSerif-fv6D6X, .markup-eYgYOl, [class*="markup"], .messageContent__21e69, [class*="messageContent__"] {
   font-family: 'Share Tech Mono', monospace !important;
   font-size: 13px !important; 
-  line-height: 1.25 !important;
-  margin-top: 1px !important;
+  line-height: 1.22 !important;
+  margin-top: 0px !important;
   text-shadow: 0 0 2px rgba(255, 0, 54, 0.2) !important;
 }
 
